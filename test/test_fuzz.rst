@@ -19,7 +19,7 @@ https://hypothesis.readthedocs.io/en/latest/index.html
 Importing libraries
 *******************
 
-    >>> from patalib import PataLib
+    >>> from patalib import Antonym, Synonym, Syzygy, Anomaly, Clinamen
     >>> from hypothesis import given, example
     >>> import hypothesis.strategies as st  
  
@@ -32,7 +32,7 @@ A pataphysical synonym list can be generated as follows:
 
     >>> @given(x=st.text())
     ... def test_synonym_vals(x): 
-    ...     synonym_list = PataLib().generate_synonym(x)
+    ...     synonym_list = Synonym().generate_synonym(x)
  
     >>> test_synonym_vals()
 
@@ -44,7 +44,7 @@ A pataphysical antonym list can be generated as follows:
 
     >>> @given(x=st.text())
     ... def test_antonym_vals(x): 
-    ...     antonym_list = PataLib().generate_antonym(x)
+    ...     antonym_list = Antonym().generate_antonym(x)
  
     >>> test_antonym_vals()
 
@@ -56,7 +56,7 @@ A pataphysical syzygy list can be generated as follows:
 
     >>> @given(x=st.text())
     ... def test_syzygy_vals(x): 
-    ...     syzygy_list = PataLib().generate_syzygy(x)
+    ...     syzygy_list = Syzygy().generate_syzygy(x)
  
     >>> test_syzygy_vals()
 

@@ -16,7 +16,7 @@ All tests are written into RST files.
 Importing PataLib
 *****************
 
-    >>> from patalib import PataLib  
+    >>> from patalib import Antonym, Synonym, Syzygy, Anomaly, Clinamen
 
 Next we need to create some test data
 
@@ -32,7 +32,7 @@ Test generating a synonym list
 
 A pataphysical synonym list can be generated as follows:
 
-    >>> synonym_list = PataLib().generate_synonym(input_word)
+    >>> synonym_list = Synonym().generate_synonym(input_word)
  
 
 Test generating an antonym list
@@ -40,7 +40,7 @@ Test generating an antonym list
 
 A pataphysical antonym list can be generated as follows:
 
-    >>> antonym_list = PataLib().generate_antonym(input_word)
+    >>> antonym_list = Antonym().generate_antonym(input_word)
 
 
 Test generating a syzygy list
@@ -48,7 +48,7 @@ Test generating a syzygy list
 
 A pataphysical syzygy list can be generated as follows:
 
-    >>> syzygy_list = PataLib().generate_syzygy(input_word)
+    >>> syzygy_list = Syzygy().generate_syzygy(input_word)
 
 
 Test generating an anomaly list
@@ -56,7 +56,7 @@ Test generating an anomaly list
 
 A pataphysical anomaly list can be generated as follows:
 
-    >>> anomaly_list = PataLib().generate_anomaly(input_word, input_dict, number_of_anom)
+    >>> anomaly_list = Anomaly().generate_anomaly(input_word, input_dict, number_of_anom)
 
 
 Test generating a clinamen list
@@ -64,7 +64,7 @@ Test generating a clinamen list
 
 A pataphysical clinamen list can be generated as follows:
 
-    >>> clinamen_list = PataLib().generate_clinamen(input_word, input_dict, input_swerve)
+    >>> clinamen_list = Clinamen().generate_clinamen(input_word, input_dict, input_swerve)
 
 
 
