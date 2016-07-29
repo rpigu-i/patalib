@@ -109,6 +109,53 @@ the returning of the word “band” throws it into a different context.
 Now we have the initial word meaning drugs, and the search result being a reference to a rock band and the associated dug use or the prohibition of drugs.</p>
 
 <h2>
+<a id="Installation instructions" class="anchor" href="#installation-instructions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation instructions</h2>
+<p> The source code can be installed from pypi via pip:</p>
+<code> pip install patalib </code>
+<p> Alternatively the source code can be cloned from GitHub and also installed via pip </p>
+<code> pip install -e patalib </code>
+
+
+<h2>
+<a id="implementing-library" class="anchor" href="#implementing-library" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Implementing the library</h2>
+
+<p>Implementing the PataLib library is fairly simple. The following examples demonstrate accessing each of the available features:<p>
+<code>
+from patalib import PataLib<br />
+from patalib import Antonym, Synonym, Syzygy, Anomaly, Clinamen<br />
+<br />
+test = Synonym().generate_synonym("bye")<br />
+<br />
+test = Antonym().generate_antonym("bye")<br />
+<br />
+test = Syzygy().generate_syzygy("bye")<br />
+<br />
+test = Anomaly().generate_anomaly("bye", ["egg","apple"], 1)<br />
+<br />
+test = Clinamen().generate_clinamen("hi", ["ho","he"], 1)<br />
+<br />
+test = PataLib().palindrome("bye")<br />
+</code> 
+
+<p> Each function bar the palindrome returns a dictionary object of the following format:</p>
+
+<code> {'input' : input word, 'results' : results, 'category' : category type} </code>
+
+<p> Here the input will be the input word, the results a list of matches and the category the 
+category type for exampe anomaly, clinamen etc. </p>
+
+<p> The Palindrome function returns true or false. <p>
+
+
+<h2>
+<a id="testing" class="anchor" href="#testing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Testing</h2>
+
+<p> A nmber of tests exist in doc test and hypothesis fuzz testing format. <p>
+<p> To run the tests from the command line you can run the following: </p>
+<code> python -m doctest test_runner.py </code>
+
+
+<h2>
 <a id="references" class="anchor" href="#references" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>References</h2>
 
 <p>Bök, C. 2002. 'Pataphysics: The Poetics of an Imaginary Science. Evanston IL, USA. Northwestern University Press.</p>
