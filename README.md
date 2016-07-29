@@ -10,7 +10,19 @@ PataLib can be found at:
 
 https://andydennis.github.io/patalib/
 
-This repository contains Python code and tests.
+This repository contains:
+
+1.) A set of Python classes used for generating Pata-data
+
+2.) Automated doc and fuzz tests
+
+
+##Dependencies
+
+Once installed, please install the latest version of the WordNet data:
+
+python -m nltk.downloader wordnet
+
 
 ##Tests
 
