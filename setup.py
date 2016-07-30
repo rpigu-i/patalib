@@ -3,9 +3,8 @@ from setuptools import setup, find_packages
 
 setup(
     name='patalib',
-    version='0.0.1',
+    version='0.0.2',
     description='Pataphysics library',
-    long_description=open('README.md', 'r').read(),
     maintainer='Andy Dennis',
     license='MIT',
     url='https://github.com/andydennis/patalib',
