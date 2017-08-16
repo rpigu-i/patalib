@@ -1,9 +1,9 @@
-###PataLib a Pataphysical toolkit for Python
+# PataLib a Pataphysical toolkit for Python
 
 PataLib for Python is a toolkit for implementing
 pataphysically inspired algorithims.
 
-##Outline
+## Outline
 
 The full documentation and site for
 PataLib can be found at:
@@ -17,14 +17,14 @@ This repository contains:
 2.) Automated doc and fuzz tests
 
 
-##Dependencies
+## Dependencies
 
 Once installed, please install the latest version of the WordNet data:
 
 python -m nltk.downloader wordnet
 
 
-##Tests
+## Tests
 
 All tests are written using doctest and hypothesis.
 
