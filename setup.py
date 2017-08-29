@@ -3,11 +3,11 @@ from setuptools import setup, find_packages
 
 setup(
     name='patalib',
-    version='1.0.0',
+    version='1.0.1',
     description='Pataphysics library',
-    maintainer='Andy Dennis',
+    maintainer='patamechanix',
     license='MIT',
-    url='https://github.com/andydennis/patalib',
+    url='https://github.com/patamechanix/patalib',
     package_dir={'': 'src'},
     include_package_data=True,
     packages=find_packages('src'),

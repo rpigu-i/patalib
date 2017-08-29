@@ -8,7 +8,7 @@ pataphysically inspired algorithims.
 The full documentation and site for
 PataLib can be found at:
 
-https://andydennis.github.io/patalib/
+https://patamechanix.github.io/patalib/
 
 This repository contains:
 
