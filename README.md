@@ -5,6 +5,9 @@ pataphysically inspired algorithims.
 
 ## Outline
 
+Version 1.x has been deprecated due to using Python 2.x.
+Please use v2.0. 
+
 The full documentation and site for
 PataLib can be found at:
 
