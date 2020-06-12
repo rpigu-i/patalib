@@ -16,7 +16,7 @@ class Synonym(PataLib):
          synset = wordnet.synsets(input_word)
          for i in synset:
              index = 0
-             syn = i.name.split('.')
+             syn = i.name().split('.')
              if syn[index]!= input_word:
                  name = syn[0]
                  results.append(PataLib().strip_underscore(name))

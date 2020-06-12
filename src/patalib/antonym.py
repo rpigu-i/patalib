@@ -16,7 +16,7 @@ class Antonym(PataLib):
             if i.pos in ['n','v']:
                 for j in i.lemmas:
                    if j.antonyms():
-                       name = j.antonyms()[0].name
+                       name = j.antonyms()[0].name()
                        results.append(PataLib().strip_underscore(name))
         results = {'input' : input_word, 'results' : results, 'category' : 'antonym'} 
         return results

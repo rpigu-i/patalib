@@ -19,12 +19,12 @@ class Syzygy(PataLib):
         synset = wordnet.synsets(input_word)
         for i in synset:
             if i.hypernyms():
-                hyp = i.hypernyms()[0].name.split('.')
+                hyp = i.hypernyms()[0].name().split('.')
                 if '_' in hyp[0]:
                     hyp[0] = PataLib().strip_underscore(hyp[0])
                 syns = wordnet.synsets(hyp[0])
                 if len(syns) > 0:
-                    name = syns[0].name.split('.')[0]
+                    name = syns[0].name().split('.')[0]
                     results.append(PataLib().strip_underscore(name))
         results = {'input' : input_word, 'results' : results, 'category' : 'syzygy'} 
         return results
