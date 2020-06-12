@@ -21,8 +21,7 @@ Importing libraries
 
     >>> from patalib import Antonym, Synonym, Syzygy, Anomaly, Clinamen
     >>> from hypothesis import given, example
-    >>> import hypothesis.strategies as st  
- 
+    >>> import hypothesis.strategies as st   
 
 
 Test generating a synonym list
