@@ -53,6 +53,8 @@ Once installed, please install the latest version of the WordNet data:
 python -m nltk.downloader wordnet
 ```
 
+Note, you should ensure you have version 3.9.1 or higher installed, as there is a bug in version 3.9 of NLTK which prevents wordnet from loading. See: https://www.nltk.org/news.html
+
 ## Tests
 
 All tests are written using doctest and hypothesis.
