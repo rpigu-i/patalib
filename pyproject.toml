@@ -1,0 +1,45 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[project]
+name = "patalib"
+version = "2.0.0"
+description = "Pataphysics library"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "rpigu-i", email = "rpigu-i@users.noreply.github.com"},
+]
+maintainers = [
+    {name = "rpigu-i"},
+]
+requires-python = ">=3.8"
+dependencies = [
+    "nltk>=3.4.5",
+    "hypothesis>=5.16.0",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/rpigu-i/patalib"
+"Repository" = "https://github.com/rpigu-i/patalib"
+"Documentation" = "https://lespatamechanix.github.io/patalib/"
+"Bug Tracker" = "https://github.com/rpigu-i/patalib/issues"
+
+[tool.poetry]
+packages = [{include = "patalib", from = "src"}]
+include = ["LICENSE", "MANIFEST.in"]
+
+[tool.poetry.group.dev.dependencies]
+# Add development dependencies here if needed
