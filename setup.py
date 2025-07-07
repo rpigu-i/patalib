@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='patalib',
-    version='2.0.0',
+    version='2.1.0',
     description='Pataphysics library',
     maintainer='rpigu-i',
     license='MIT',
