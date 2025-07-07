@@ -17,6 +17,28 @@ This repository contains:
 2.) Automated doc and fuzz tests
 
 
+## Installation
+
+### Using Poetry (Recommended)
+
+This project now supports Poetry for dependency management and packaging. To install using Poetry:
+
+```bash
+# Install the project and its dependencies
+poetry install
+
+# Run tests with Poetry
+poetry run python test/test_runner.py
+```
+
+### Using pip (Traditional)
+
+You can still install using pip and the traditional setup.py:
+
+```bash
+pip install -e .
+```
+
 ## Dependencies
 
 Mac user will need to install Xcode first
@@ -35,8 +57,19 @@ python -m nltk.downloader wordnet
 
 All tests are written using doctest and hypothesis.
 
-Tests can be run from the command line inside the test directory as follows:
+Tests can be run from the command line in several ways:
 
+### Using Poetry
+```bash
+poetry run python test/test_runner.py
 ```
-> python -m doctest test_runner.py 
+
+### Using traditional Python
+```bash
+python test/test_runner.py
+```
+
+### Direct doctest execution
+```bash
+python -m doctest test/test_runner.py 
 ```
