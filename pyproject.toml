@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 [project]
 name = "patalib"
-version = "2.0.0"
+version = "2.1.0"
 description = "Pataphysics library"
 readme = "README.md"
 license = {text = "MIT"}
@@ -16,7 +16,7 @@ maintainers = [
 ]
 requires-python = ">=3.8"
 dependencies = [
-    "nltk>=3.4.5",
+    "nltk>=3.9.1",
     "hypothesis>=5.16.0",
 ]
 classifiers = [
@@ -34,7 +34,7 @@ classifiers = [
 [project.urls]
 "Homepage" = "https://github.com/rpigu-i/patalib"
 "Repository" = "https://github.com/rpigu-i/patalib"
-"Documentation" = "https://lespatamechanix.github.io/patalib/"
+"Documentation" = "https://rpigu-i.github.io/patalib/"
 "Bug Tracker" = "https://github.com/rpigu-i/patalib/issues"
 
 [tool.poetry]
