@@ -38,8 +38,13 @@ classifiers = [
 "Bug Tracker" = "https://github.com/rpigu-i/patalib/issues"
 
 [tool.poetry]
+name = "patalib"
+version = "2.1.0"
+description = "Pataphysics library"
+authors = ["rpigu-i <rpigu-i@users.noreply.github.com>"]
 packages = [{include = "patalib", from = "src"}]
 include = ["LICENSE", "MANIFEST.in"]
+
 
 [tool.poetry.group.dev.dependencies]
 # Add development dependencies here if needed
