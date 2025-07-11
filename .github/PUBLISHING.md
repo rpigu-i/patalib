@@ -41,11 +41,11 @@ To publish a new version:
 
 ## Prerequisites
 
-Before the first publication, you need to set up PyPI trusted publishing:
+Before the first publication, you need to set up PyPI trusted publishing, the example below demonstrates how this works:
 
 1. Go to your [PyPI account settings](https://pypi.org/manage/account/publishing/)
 2. Add a new trusted publisher with these settings:
-   - **Owner**: `rpigu-i`
+   - **Owner**: `<name>`
    - **Repository name**: `patalib`
    - **Workflow name**: `publish-to-pypi.yml`
    - **Environment name**: (leave empty)
