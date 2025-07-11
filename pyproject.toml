@@ -2,23 +2,16 @@
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
-[project]
+[tool.poetry]
 name = "patalib"
 version = "2.1.0"
 description = "Pataphysics library"
 readme = "README.md"
-license = {text = "MIT"}
-authors = [
-    {name = "rpigu-i", email = "rpigu-i@users.noreply.github.com"},
-]
-maintainers = [
-    {name = "rpigu-i"},
-]
-requires-python = ">=3.8"
-dependencies = [
-    "nltk>=3.9.1",
-    "hypothesis>=5.16.0",
-]
+license = "MIT"
+authors = ["rpigu-i <rpigu-i@users.noreply.github.com>"]
+maintainers = ["rpigu-i"]
+packages = [{include = "patalib", from = "src"}]
+include = ["LICENSE", "MANIFEST.in"]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
@@ -30,21 +23,15 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
 ]
+homepage = "https://github.com/rpigu-i/patalib"
+repository = "https://github.com/rpigu-i/patalib"
+documentation = "https://rpigu-i.github.io/patalib/"
+bugtracker = "https://github.com/rpigu-i/patalib/issues"
 
-[project.urls]
-"Homepage" = "https://github.com/rpigu-i/patalib"
-"Repository" = "https://github.com/rpigu-i/patalib"
-"Documentation" = "https://rpigu-i.github.io/patalib/"
-"Bug Tracker" = "https://github.com/rpigu-i/patalib/issues"
-
-[tool.poetry]
-name = "patalib"
-version = "2.1.0"
-description = "Pataphysics library"
-authors = ["rpigu-i <rpigu-i@users.noreply.github.com>"]
-packages = [{include = "patalib", from = "src"}]
-include = ["LICENSE", "MANIFEST.in"]
-
+[tool.poetry.dependencies]
+python = ">=3.8"
+nltk = ">=3.9.1"
+hypothesis = ">=5.16.0"
 
 [tool.poetry.group.dev.dependencies]
 # Add development dependencies here if needed
