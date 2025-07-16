@@ -16,6 +16,9 @@ This repository contains:
 
 2.) Automated doc and fuzz tests
 
+For some background on Patadata see:
+
+https://andrewhugill.com/writings/syzygy_surfer.pdf
 
 ## Installation
 
